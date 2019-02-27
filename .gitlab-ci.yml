@@ -1,15 +1,18 @@
-image: node:8.15.0 # can be upgraded, depending on your node version used
+image: node
 
-pages:
-  stage: deploy
+stages:
+- build
+- stage
+
+build_frontend:
+  stage: build
   script:
-  - npm install
-  - npm install react-grid-system
-  - npm run build
-  - rm -rf public
-  - mv build public
+  - cd ./src/frontend
+  - npm install && npm audit fix
+  # CI=false set to ignore warnings as errors
+  - CI=false npm run build
   artifacts:
     paths:
-    - public # mandatory, other folder won't work
-  only:
-  - master # or dev, the branch you want to publish
+    - ./src/frontend/build
+  tags:
+  - projectname
