@@ -4,6 +4,7 @@ import Rocket from './components/Rocket';
 import Cloud from './components/Cloud';
 import Bird from './components/Bird';
 import Satellite from './components/Satellite';
+import Balloon from './components/Balloon';
 
 class App extends Component {
   render() {
@@ -23,6 +24,9 @@ class App extends Component {
     </Col>
     <Col sm={2} xs={4} md={4}>
     <Satellite/>
+    </Col>
+    <Col sm={4} xs={12} md={4} >
+        <Balloon />
     </Col>
     
   </Row>
