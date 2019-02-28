@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-class bird extends Component {
+import birds from './images/birds.gif';
+class Bird extends Component {
     render() {
         return (
-            <p>Edit bird Here</p>
+              <img src={birds} alt="birds" />
         );
     }
 }
-export default bird;
+export default Bird;
