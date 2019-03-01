@@ -10,16 +10,20 @@ class App extends Component {
   render() {
     return (
       <div>
+        <button>click</button>
+
         
   <Container>
-  <Row>
-   
-    <Col sm={4} xs={12} md={3}> 
+  <Row> 
+   <Col sm={2} xs={12} md={3}> 
         <Rocket />
     </Col>
-    <Col sm={4} xs={12} md={3}>
+   
+   <Col sm={6} xs={12} md={3}>
       <Cloud />
     </Col>
+   
+   
     <Col sm={12} xs={12} md={3} >
         <Aeroplane />
     </Col>
@@ -29,6 +33,7 @@ class App extends Component {
     <Col sm={4} xs={12} md={4} >
         <Balloon />
     </Col>
+    
     
   </Row>
   </Container>

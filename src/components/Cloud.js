@@ -4,7 +4,7 @@ class Cloud extends Component {
     render() {
         return (
          <img src={clouds} alt="Cloud" 
-            
+           
          />
         );
     }

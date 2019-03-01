@@ -4,6 +4,7 @@ class Aeroplane extends Component {
     render() {
         return (
         <img src={aeroplane} alt="Aeroplane" />
+        
         );
     }
 }
