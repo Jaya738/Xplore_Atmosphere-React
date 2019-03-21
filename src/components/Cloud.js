@@ -3,10 +3,9 @@ import clouds from './images/clouds.gif';
 class Cloud extends Component {
     render() {
         return (
-         <img src={clouds} alt="Cloud" 
-           
-         />
-        );
+       
+           <button />
+               );
     }
 }
 export default Cloud;
