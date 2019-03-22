@@ -10,32 +10,18 @@ import Satellite from './components/Satellite';
 import Balloon from './components/Balloon';
 import Back from './components/images/back.png';
 import Troposphere from './components/Troposphere.js';
+import Stratosphere from './components/Stratosphere.js';
+import Mesosphere from './components/Mesosphere.js';
+import Thermosphere from './components/Thermosphere.js';
+import Exosphere from './components/Exosphere.js';
+
+
 import Home from './components/Home.js';
-import './App.css'; 
+import './App.css';
+import Trop from './components/images/download.png'; 
 
 
-const NavBar = () => (
-  <div className="navbar">
-    <Link to="/">Troposphere</Link>
-    <Link to="/stratosphere">Stratosphere</Link>
-    <Link to="/mesosphere">Mesosphere</Link>
-  
-  </div>
-);
-const Template = ({ title }) => (
-  <div>
-    <NavBar />
-    <p className="page-info">
-      This is the {title} page.
-    </p>
-  </div>
-);
-const Feed = (props) => (
-  <Template title="Feed"/>
-);
-const Profile = (props) => (
-  <Template title="Profile"/>
-);
+
 class App extends Component {
   render() {
     return (
@@ -44,12 +30,18 @@ class App extends Component {
                <div>
                  <Row>
                 <Col style={{backgroundColor:'yellow'}} xs={10.36}>  
+                  <Route path="/home" component={Home} />
+                  <Route path="/exosphere" component={Exosphere} />
+                  <Route path="/thermosphere" component={Thermosphere} />
+                  <Route path="/mesosphere" component={Mesosphere} />
+                  <Route path="/stratosphere" component={Stratosphere} />
                   <Route path="/troposphere" component={Troposphere} />
+                 
                 </Col> 
            
           <Col style={{backgroundColor:'green'}}>
             <Col sm={12} md={12}>       
-              <Link to="/troposphere">  
+              <Link to="/exosphere">  
               <div>
               <Flippy    
                 style={{ width: '200px', height: '186px' }}          
@@ -61,7 +53,7 @@ class App extends Component {
                 <FrontSide style={{backgroundColor: '#B0E0E6',borderWidth: '2px',borderStyle: 'solid',borderColor: 'orange'}}>
                 </FrontSide>
          
-                <BackSide style={{ backgroundColor: "orange"}}>  EVAPORATION </BackSide>
+                <BackSide style={{ backgroundColor: "orange"}}>  Troposphere </BackSide>
              
               </Flippy> 
              </div>
@@ -73,7 +65,7 @@ class App extends Component {
 
            <Col sm={12} md={12}>
            
-          <Link to="/troposphere">
+          <Link to="/thermosphere">
               <div>
               <Flippy    
                 style={{ width: '200px', height: '186px' }}          
@@ -97,7 +89,7 @@ class App extends Component {
 
            <Col sm={12} md={12}>
            
-            <Link to="/troposphere">
+            <Link to="/mesosphere">
              <div>
               <Flippy    
                 style={{ width: '200px', height: '186px' }}          
@@ -120,7 +112,7 @@ class App extends Component {
 
            <Col sm={12} md={12}>
            
-            <Link to="/troposphere">
+            <Link to="/stratosphere">
               <div>
               <Flippy    
                 style={{ width: '200px', height: '186px' }}          

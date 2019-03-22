@@ -8,11 +8,11 @@ import Rocket from './Rocket.js';
 
 
 
-class Troposphere extends Component {
+class Exosphere extends Component {
     render() {
         return (
               <div className="Trop" style={{backgroundImage:'url(' + Tro + ')'}}>
-                <h1>Troposphere</h1>
+                <h1>Exosphere</h1>
                  <Row>
                     <Col xs={12} style={{backgroundColor:'yellow'}}>
                         
@@ -30,4 +30,4 @@ class Troposphere extends Component {
         );
     }
 }
-export default Troposphere;
+export default Exosphere;
