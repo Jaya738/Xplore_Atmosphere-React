@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
-import { Router, Route, Link, Switch,browserHistory,Redirect } from "react-router";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
+import {Button} from 'semantic-ui-react';
 import Rocket from './components/Rocket';
 import Cloud from './components/Cloud';
 import Aeroplane from './components/Aeroplane';
@@ -38,26 +39,20 @@ const Profile = (props) => (
 class App extends Component {
   render() {
     return (
-       
+            
+             <Router>
+               <div>
                  <Row>
-                    <Col xs={10}>
-                      <Container>  
-                        <Row>
-                          <Col xs={5}></Col>
-                          <Col xs={2}> <Rocket /> </Col>
-
-                        </Row>
-                     </Container>
-                    </Col>
+                <Col style={{backgroundColor:'yellow'}} xs={10.36}>  
+                  <Route path="/troposphere" component={Troposphere} />
+                </Col> 
            
-                 <Col xs={2}>
-
-                  
-              <Col sm={12} md={12}>
-           {
-            
+          <Col style={{backgroundColor:'green'}}>
+            <Col sm={12} md={12}>       
+              <Link to="/troposphere">  
+              <div>
               <Flippy    
-                style={{ width: '290px', height: '238px' }}          
+                style={{ width: '200px', height: '186px' }}          
                 flipOnHover={false} 
                 flipOnClick={true} 
                 flipDirection="horizontal"                  
@@ -69,17 +64,19 @@ class App extends Component {
                 <BackSide style={{ backgroundColor: "orange"}}>  EVAPORATION </BackSide>
              
               </Flippy> 
-             
+             </div>
+             </Link>
             
-            }
+            
            </Col>
 
 
            <Col sm={12} md={12}>
-           {
-            
+           
+          <Link to="/troposphere">
+              <div>
               <Flippy    
-                style={{ width: '290px', height: '238px' }}          
+                style={{ width: '200px', height: '186px' }}          
                 flipOnHover={false} 
                 flipOnClick={true} 
                 flipDirection="horizontal"                  
@@ -91,17 +88,19 @@ class App extends Component {
                 <BackSide style={{ backgroundColor: "orange"}}>  EVAPORATION </BackSide>
              
               </Flippy> 
-             
+            </div>
+             </Link>
             
-            }
+            
            </Col>
 
 
            <Col sm={12} md={12}>
-           {
-            
+           
+            <Link to="/troposphere">
+             <div>
               <Flippy    
-                style={{ width: '290px', height: '238px' }}          
+                style={{ width: '200px', height: '186px' }}          
                 flipOnHover={false} 
                 flipOnClick={true} 
                 flipDirection="horizontal"                  
@@ -113,17 +112,18 @@ class App extends Component {
                 <BackSide style={{ backgroundColor: "orange"}}>  EVAPORATION </BackSide>
              
               </Flippy> 
-             
+             </div>
+           </Link> 
             
-            }
            </Col>
 
 
            <Col sm={12} md={12}>
-           {
-            
+           
+            <Link to="/troposphere">
+              <div>
               <Flippy    
-                style={{ width: '290px', height: '238px' }}          
+                style={{ width: '200px', height: '186px' }}          
                 flipOnHover={false} 
                 flipOnClick={true} 
                 flipDirection="horizontal"                  
@@ -135,16 +135,42 @@ class App extends Component {
                 <BackSide style={{ backgroundColor: "orange"}}>  EVAPORATION </BackSide>
              
               </Flippy> 
-             
+            </div>
+            </Link> 
             
-            }
+           
+           </Col>
+
+
+           <Col sm={12} md={12}>
+           
+            <Link to="/troposphere">
+              <div>
+              <Flippy    
+                style={{ width: '200px', height: '186px' }}          
+                flipOnHover={false} 
+                flipOnClick={true} 
+                flipDirection="horizontal"                  
+               >
+    
+                <FrontSide style={{backgroundColor: '#B0E0E6',borderWidth: '2px',borderStyle: 'solid',borderColor: 'orange'}}>
+                </FrontSide>
+         
+                <BackSide style={{ backgroundColor: "orange"}}>  EVAPORATION </BackSide>
+             
+              </Flippy> 
+             </div>
+            </Link>
+           
            </Col>
            </Col>
             
            
                   </Row>
-                
-                
+
+    </div>
+     </Router>           
+    
     );
   }
 }

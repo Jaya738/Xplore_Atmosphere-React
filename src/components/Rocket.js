@@ -4,7 +4,7 @@ import rocket from './images/rocket.png';
 class Rocket extends Component {
     render() {
         return (
-        <img src={rocket} alt="Rocket" />
+        <img className="rocket" src={rocket} alt="Rocket" />
         );
     }
 }

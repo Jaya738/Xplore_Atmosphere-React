@@ -14,14 +14,14 @@ class Troposphere extends Component {
               <div className="Trop" style={{backgroundImage:'url(' + Tro + ')'}}>
                 
                  <Row>
-                    <Col xs={10}>
-                      <Container>  
+                    <Col xs={12} style={{backgroundColor:'yellow'}}>
+                        
                         <Row>
-                          <Col xs={5}></Col>
-                          <Col xs={2}> <Rocket /> </Col>
+                          <Col xs={5} ></Col>
+                          <Col xs={2} style={{backgroundColor:'green'}}> <Rocket /> </Col>
 
                         </Row>
-                     </Container>
+                     
                     </Col>
                 </Row>
                  
