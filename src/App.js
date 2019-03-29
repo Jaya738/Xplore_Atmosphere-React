@@ -9,6 +9,7 @@ import Thermosphere from './components/Thermosphere.js';
 import Exosphere from './components/Exosphere.js';
 import Home from './components/Home.js';
 import StarfieldAnimation from 'react-starfield-animation'
+import Button from './components/Button'
 import './App.css';
 
 class App extends Component {
@@ -32,25 +33,7 @@ class App extends Component {
      </Col>
      
      <Col  md={1}>
-        <Row>
-          <button className="B1"></button>
-        </Row>
-
-        <Row>
-          <button className="B1"></button>
-        </Row>
-
-        <Row>
-          <button className="B1"></button>
-        </Row>
-
-        <Row>
-          <button className="B1"></button>
-        </Row>
-
-        <Row>
-          <button className="B1"></button>
-        </Row>
+        <Button />
      </Col>
      </Row>
       </BrowserRouter>
