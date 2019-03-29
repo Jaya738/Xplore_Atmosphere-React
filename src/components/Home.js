@@ -3,9 +3,9 @@ import { Container, Row, Col } from 'react-grid-system';
 
 import StarfieldAnimation from 'react-starfield-animation'
 import Star from './reusable_components/images/stars.jpg';
-import '/home/jp/Desktop/sp/xplore-atmosphere/src/App.css';
+import './Home.css';
 import BackgroundSlideshow from 'react-background-slideshow';
-import Logo from '/home/jp/Desktop/sp/xplore-atmosphere/src/components/reusable_components/images/logo.png';
+import Logo from './reusable_components/images/logo.png';
 class Home extends Component {
     render() {
         return (

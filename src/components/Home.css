@@ -1,0 +1,91 @@
+
+.logo{
+  width:500px;
+   height:200px;
+   align:center;
+}
+.B1 {
+      border-radius: 4px;
+  background-color: #FFBD00;
+  border: none;
+  color: #FFFFFF;
+  text-align: left;
+  font-size: 28px;
+  padding: 88px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px 0px;
+}
+
+.Stars{
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  min-height: 935px;
+  
+}
+
+.b{
+  background-color: yellow;
+  border: none;
+  color: #FFFFFF;
+  text-align: left;
+  font-size: 28px;
+  padding: 10px;
+  height:100px;
+}
+
+.router{
+   background-color: blue;
+   height:100%;
+
+}
+ 
+
+
+.Trop{
+  position: relative;
+  background-color:skyblue;
+  background-repeat: no-repeat;
+   border: 2px solid black;
+   max-width:100%;
+   max-height:100%;
+   height:930px;
+   width:1620px;
+}
+
+.navbar {
+  background-color: red;
+  text-align: left;
+}
+.navbar a {
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.page-info {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.B2 {
+  
+  background-color: Transparent;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 0px;
+  width: 200px;
+  height: 186px;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+}
+
+.rocket{
+  height:186px;
+  text-align:center;
+}
