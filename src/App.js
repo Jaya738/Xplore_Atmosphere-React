@@ -8,15 +8,15 @@ import Mesosphere from './components/Mesosphere.js';
 import Thermosphere from './components/Thermosphere.js';
 import Exosphere from './components/Exosphere.js';
 import Home from './components/Home.js';
+import StarfieldAnimation from 'react-starfield-animation'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-      <div>
       <Row>
-      <Col md={10}>
+      <Col md={11}>
 
           <Switch>
                 
@@ -30,11 +30,29 @@ class App extends Component {
                 
      </Switch> 
      </Col>
-     <Col md={2}>
-        <p>Buttons</p>
+     
+     <Col  md={1}>
+        <Row>
+          <button className="B1"></button>
+        </Row>
+
+        <Row>
+          <button className="B1"></button>
+        </Row>
+
+        <Row>
+          <button className="B1"></button>
+        </Row>
+
+        <Row>
+          <button className="B1"></button>
+        </Row>
+
+        <Row>
+          <button className="B1"></button>
+        </Row>
      </Col>
      </Row>
-      </div>
       </BrowserRouter>
         
     );

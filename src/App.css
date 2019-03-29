@@ -1,5 +1,32 @@
+
+.logo{
+  width:500px;
+   height:200px;
+   align:center;
+}
+.B1 {
+      border-radius: 4px;
+  background-color: #FFBD00;
+  border: none;
+  color: #FFFFFF;
+  text-align: left;
+  font-size: 28px;
+  padding: 88px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px 0px;
+}
+
+.Stars{
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  min-height: 935px;
+  
+}
+
 .b{
-    background-color: yellow;
+  background-color: yellow;
   border: none;
   color: #FFFFFF;
   text-align: left;
