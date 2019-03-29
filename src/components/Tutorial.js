@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-class Troposphere extends Component {
+class Tutorial extends Component {
     render() {
         return (
               <div>
-                <p>This is Troposphere </p>
+                 <p>This is tutorial page</p>
               </div>
         );
     }
 }
-export default Troposphere;
+export default Tutorial;
