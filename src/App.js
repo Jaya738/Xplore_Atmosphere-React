@@ -9,7 +9,7 @@ import Thermosphere from './components/Thermosphere.js';
 import Exosphere from './components/Exosphere.js';
 import Home from './components/Home.js';
 import './App.css';
-
+import Button from './components/Button';
 class App extends Component {
   render() {
     return (
@@ -31,7 +31,7 @@ class App extends Component {
      </Switch> 
      </Col>
      <Col md={2}>
-        <p>Buttons</p>
+        <Button />
      </Col>
      </Row>
       </div>
