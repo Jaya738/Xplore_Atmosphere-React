@@ -28,23 +28,23 @@ class Button extends Component {
             <Sidebar class="sidebar" initialPose="exit" pose="enter">
               
             <Row>
-          <button className="B1"></button>
+          <button className="Button">Exosphere</button>
         </Row>
 
         <Row>
-          <button className="B1"></button>
+          <button className="Button">Thermosphere</button>
         </Row>
 
         <Row>
-          <button className="B1"></button>
+          <button className="Button">Mesosphere</button>
         </Row>
 
         <Row>
-          <button className="B1"></button>
+          <button className="Button">Stratosphere</button>
         </Row>
 
         <Row>
-          <button className="B1"></button>
+          <button className="Button" >Troposphere</button>
         </Row>              
             </Sidebar>
           </div>
