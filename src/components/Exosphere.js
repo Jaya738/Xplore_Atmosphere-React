@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from 'react-grid-system';
+import xosphere from './reusable_components/images/exosphere.jpg';
+import "./exo.css"
 class Exosphere extends Component {
     render() {
         return (
-              <div>
-                  <p>This is Exosphere</p>
-              </div>
+            
+               <Row className="exosphere" style={{backgroundImage:'url(' + xosphere + ')'}}>
+
+       </Row>  
+   
         );
     }
 }
