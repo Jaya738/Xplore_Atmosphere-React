@@ -25,3 +25,18 @@ body {
     font-weight: 200;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
   }
+  .Button {
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 9px;
+    width: 296px;
+    height: 180px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px 2px;
+  }
+
+  
