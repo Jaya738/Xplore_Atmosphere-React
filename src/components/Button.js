@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './button.css';
+import {Link} from 'react-router-dom';
 import posed from 'react-pose';
 
 import { Container, Row, Col } from 'react-grid-system';
@@ -27,24 +28,25 @@ class Button extends Component {
             <div className="container">
             <Sidebar class="sidebar" initialPose="exit" pose="enter">
               
-            <Row>
-          <button className="Button">Exosphere</button>
+        <Row>
+          <Link to= 'exosphere'> <button className="Button">Exosphere</button> </Link>
         </Row>
 
         <Row>
-          <button className="Button">Thermosphere</button>
+        <Link to= 'thermosphere'> <button className="Button">Thermosphere</button> </Link>
+        </Row>
+
+         
+        <Row>
+        <Link to= 'mesosphere'> <button className="Button">Mesosphere</button> </Link> 
         </Row>
 
         <Row>
-          <button className="Button">Mesosphere</button>
+        <Link to= 'stratosphere'> <button className="Button">Stratosphere</button> </Link>  
         </Row>
 
         <Row>
-          <button className="Button">Stratosphere</button>
-        </Row>
-
-        <Row>
-          <button className="Button" >Troposphere</button>
+        <Link to= 'troposphere'> <button className="Button">Troposphere</button> </Link>  
         </Row>              
             </Sidebar>
           </div>
