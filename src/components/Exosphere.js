@@ -1,33 +1,49 @@
 import React, { Component } from 'react';
-import { Router, Route, Link, Switch,browserHistory } from "react-router";
 import { Container, Row, Col } from 'react-grid-system';
 
-import Tro from './images/earth.png';
-import rocket from './images/rocket.png';
-import Rocket from './Rocket.js';
-
-
-
-class Exosphere extends Component {
+import StarfieldAnimation from 'react-starfield-animation'
+import Star from './reusable_components/images/stars.jpg';
+import './Home.css';
+import BackgroundSlideshow from 'react-background-slideshow';
+import Rocket from './reusable_components/Rocket.js'; 
+class Home extends Component {
     render() {
         return (
-              <div className="Trop" style={{backgroundImage:'url(' + Tro + ')'}}>
-                <h1>Exosphere</h1>
-                 <Row>
-                    <Col xs={12} style={{backgroundColor:'yellow'}}>
-                        
-                        <Row>
-                          <Col xs={5} ></Col>
-                          <Col xs={2} style={{backgroundColor:'green'}}> <Rocket /> </Col>
+             
+    
+    <Row className="Stars" style={{backgroundImage:'url(' + Star + ')'}}>
+      
+              <StarfieldAnimation
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%'
+        }}
+      />
 
-                        </Row>
-                     
-                    </Col>
-                </Row>
-                 
-                
-              </div>
+      <Col md={5}>
+
+      </Col>
+
+      <Col md={2}>
+        <Row style={{height:"400px"}}>
+          
+        </Row>
+
+        <Row>
+            <Col> <Rocket /> </Col>
+        </Row>
+      </Col>
+
+      <Col md={5}>
+
+      </Col>
+
+
+    </Row>  
+     
+             
         );
     }
 }
-export default Exosphere;
+export default Home;

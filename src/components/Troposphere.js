@@ -1,32 +1,39 @@
 import React, { Component } from 'react';
-import { Router, Route, Link, Switch,browserHistory } from "react-router";
 import { Container, Row, Col } from 'react-grid-system';
-
-import Tro from './images/earth.png';
-import rocket from './images/rocket.png';
-import Rocket from './Rocket.js';
-
-
+import Rocket from './reusable_components/Rocket.js';
 
 class Troposphere extends Component {
     render() {
         return (
-              <div className="Trop" style={{backgroundImage:'url(' + Tro + ')'}}>
-                <h1>Troposphere</h1>
-                 <Row>
-                    <Col xs={12} style={{backgroundColor:'yellow'}}>
-                        
-                        <Row>
-                          <Col xs={5} ></Col>
-                          <Col xs={2} style={{backgroundColor:'green'}}> <Rocket /> </Col>
-
-                        </Row>
-                     
-                    </Col>
-                </Row>
-                 
+              <Row>
                 
-              </div>
+                <Col md={5} >
+                     <Row align="center" style={{ height: '100px' }}>
+                       <Col md={12} style={{backgroundColor: "red"}}><p>Troposphere data</p></Col>
+                       
+                     </Row>
+                </Col>
+
+                <Col md={2}>
+                      <Row  style={{height: '400px'}}>  
+                        
+                      </Row>
+
+                      <Row>
+                        <Col> <Rocket /> </Col>
+                      </Row>
+                </Col>
+
+                <Col md={5}>
+                     <Row align="center" style={{ height: '100px' }}>
+                      <Col md={12} style={{backgroundColor: "red"}}><p>Troposphere data</p></Col>
+                      
+                    </Row>
+                </Col>
+             
+              </Row> 
+              
+            
         );
     }
 }
