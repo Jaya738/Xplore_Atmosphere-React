@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 import Rocket from './reusable_components/Rocket.js';
-
+import stsphere from './reusable_components/images/strato1.jpg';
+import "./stratosphere.css"
 class Stratosphere extends Component {
     render() {
         return (
-         <Row>
+         <Row   className="st" style={{backgroundImage:'url(' + stsphere + ')'}}>
                 
                 <Col md={5} >
                      <Row align="center" style={{ height: '100px' }}>
@@ -16,11 +17,11 @@ class Stratosphere extends Component {
 
                 <Col md={2}>
                       <Row  style={{height: '400px'}}>  
-                        
+                      <Rocket />
                       </Row>
 
                       <Row>
-                        <Col> <Rocket /> </Col>
+                        
                       </Row>
                 </Col>
 

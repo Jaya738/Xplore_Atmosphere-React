@@ -22,7 +22,7 @@ class Home extends Component {
       />
 
       <Col md={5}>
-
+      
       </Col>
 
       <Col md={2}>
