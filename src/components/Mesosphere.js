@@ -1,18 +1,38 @@
 import React, { Component } from 'react';
-import { Container,Row,Col} from 'react-grid-system';
-import mesosphere from './reusable_components/images/mesosphere.jpg';
+import { Container, Row, Col } from 'react-grid-system';
+import Rocket from './reusable_components/Rocket.js';
 
 class Mesosphere extends Component {
     render() {
         return (
-              <div>
-                  <Row className="mesosphere" style={ {backgroundImage: 'url('+ mesosphere +')'}}>
-                  </Row>
-                  
-              </div>
+         <Row>
+                
+                <Col md={5} >
+                     <Row align="center" style={{ height: '100px' }}>
+                       <Col md={12} style={{backgroundColor: "red"}}><p>Mesosphere data</p></Col>
+                       
+                     </Row>
+                </Col>
+
+                <Col md={2}>
+                      <Row  style={{height: '400px'}}>  
+                        
+                      </Row>
+
+                      <Row>
+                        <Col> <Rocket /> </Col>
+                      </Row>
+                </Col>
+
+                <Col md={5}>
+                     <Row align="center" style={{ height: '100px' }}>
+                      <Col md={12} style={{backgroundColor: "red"}}><p>Mesosphere data</p></Col>
+                      
+                    </Row>
+                </Col>
+             
+              </Row> 
         );
     }
 }
 export default Mesosphere;
-
-
