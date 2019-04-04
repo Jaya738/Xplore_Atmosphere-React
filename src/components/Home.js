@@ -1,31 +1,42 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
-
-import StarfieldAnimation from 'react-starfield-animation'
-import Star from './reusable_components/images/stars.jpg';
 import './Home.css';
-import BackgroundSlideshow from 'react-background-slideshow';
 import Logo from './reusable_components/images/logo.png';
+import Sky from 'react-sky';
+import i1 from './reusable_components/images/button_logos/aero.png';
+import i2 from './reusable_components/images/button_logos/ast.png';
+import i3 from './reusable_components/images/button_logos/cloud.png';
+
+
+
 class Home extends Component {
     render() {
         return (
-             
-    
-    <Row className="Stars" style={{backgroundImage:'url(' + Star + ')'}}>
-      
-              <StarfieldAnimation
-        style={{
-          position: 'absolute',
-          width: '100%',
-          height: '100%'
-        }}
-      />
-      <Col md={10}></Col>
-      <Col md={5}></Col>
-      
-             <img src={Logo} className="logo"/>
+     <div >      
+     <Row className="th"  >
+       <Sky 
+            images={{
+              0:i1,
+              1:i2,
+              2:i3
+            }}
 
-       </Row>  
+            how={200}
+            time={100}
+            size={'100px'}
+            background={"grey"}
+        />
+       <Col md={5}>
+        
+       </Col>
+
+       <Col md={3.5}>
+         <Row style={{height:'300px'}}></Row>
+         <Row ><img src={Logo} className="logo" /></Row>
+       </Col>
+       
+     </Row>
+   </div>
      
              
         );
