@@ -1,12 +1,6 @@
-.exosphere{
+.th{
   width: 100%;
-  position: relative;
-  background-size: cover;
-  min-height: 935px;
-  
-}
-.sati{
-  width: 100%;
+  height:100%;
   position: relative;
   background-size: cover;
   min-height: 935px;
