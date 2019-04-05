@@ -14,41 +14,6 @@ class Thermosphere extends Component {
              <Col md={5}><Container><p>c2</p></Container></Col>
             </Row>
          </div>
-
-import thrsphere from './reusable_components/images/mesosphere.jpg';
-import "./exo.css"
-
-class Thermosphere extends Component {
-    render() {
-        return (
-         <Row  className="th" style={{backgroundImage:'url(' + thrsphere + ')'}}>
-                 
-        <Col md={5} >
-                     <Row align="center" style={{ height: '100px' }}>
-                       <Col md={12} style={{backgroundColor: "red"}}><p>Thermosphere data</p></Col>
-                       
-                     </Row>
-                </Col>
-
-                <Col md={2}>
-                      <Row  style={{height: '400px'}}>  
-                        
-                      </Row>
-
-                      <Row>
-                        <Col> <Rocket /> </Col>
-                      </Row>
-                </Col>
-
-                <Col md={5}>
-                     <Row align="center" style={{ height: '100px' }}>
-                      <Col md={12} style={{backgroundColor: "red"}}><p>Thermosphere data</p></Col>
-                      
-                    </Row>
-                </Col>
-             
-              </Row> 
-
         );
     }
 }
