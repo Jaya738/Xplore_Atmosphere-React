@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 import Rocket from './reusable_components/Rocket.js';
-<<<<<<< HEAD
 import thrsphere from './reusable_components/images/thermosphere.jpeg';
 import "./thermo.css";
-=======
-<<<<<<< HEAD
+
 
 class Thermosphere extends Component {
     render() {
@@ -16,10 +14,10 @@ class Thermosphere extends Component {
              <Col md={5}><Container><p>c2</p></Container></Col>
             </Row>
          </div>
-=======
+
 import thrsphere from './reusable_components/images/mesosphere.jpg';
 import "./exo.css"
->>>>>>> 749cbe9a0c1293940bfaa7f32ee38971a46f726e
+
 class Thermosphere extends Component {
     render() {
         return (
@@ -50,7 +48,7 @@ class Thermosphere extends Component {
                 </Col>
              
               </Row> 
->>>>>>> 4faadd710baf9ff93f85b3f0893d0ffc90da2558
+
         );
     }
 }
