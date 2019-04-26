@@ -25,10 +25,10 @@ class Troposphere extends Component {
                 </Col>
 
                 <Col md={5}>
-                     <Row align="center" style={{ height: '100px' }}>
-                      <Col md={12} style={{backgroundColor: "red"}}><p>Troposphere data</p></Col>
+                     <Row align="center" style={{ height:'100px'}}>
+                     <Col md={12} style={{backgroundColor: "red"}}><p>Troposphere data</p></Col>
                       
-                    </Row>
+                     </Row>
                 </Col>
              
               </Row> 

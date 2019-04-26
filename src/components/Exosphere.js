@@ -5,7 +5,6 @@ import StarfieldAnimation from 'react-starfield-animation'
 import Star from './reusable_components/images/stars.jpg';
 import './Home.css';
 import BackgroundSlideshow from 'react-background-slideshow';
-import Rocket from './reusable_components/Rocket.js'; 
 class Home extends Component {
     render() {
         return (
@@ -25,19 +24,8 @@ class Home extends Component {
       
       </Col>
 
-      <Col md={2}>
-        <Row style={{height:"400px"}}>
-          
-        </Row>
+      
 
-        <Row>
-            <Col> <Rocket /> </Col>
-        </Row>
-      </Col>
-
-      <Col md={5}>
-
-      </Col>
 
 
     </Row>  
